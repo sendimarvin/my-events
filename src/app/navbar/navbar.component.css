@@ -1,0 +1,42 @@
+
+
+.logo-content {
+    display: inline-block;
+    max-width: 200px;
+    padding-left: 20px;
+}
+
+.navbar-custom {
+    background-color: #eeb230 !important;
+    color: white !important;
+}
+
+
+.company-brand {
+    padding-left: 2%;
+    color: black;
+    font-weight: bold;
+}
+
+.content-to-center {
+    margin:auto;
+}
+
+.logo-styes {
+    /* margin-left: 20px; */
+    width: 60px;
+    border-radius: 100%;
+}
+
+.more-section {
+    max-width: 200px;
+}
+
+.navbar-expand {
+    flex-flow: wrap;
+}
+
+.options-btn {
+    background-color: inherit !important;
+}
+

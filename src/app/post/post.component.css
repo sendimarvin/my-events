@@ -1,0 +1,27 @@
+
+
+.profile-pic-thumbnail {
+    width: 50px;
+    border-radius: 100%;
+    padding: 6px;
+}
+
+.user-name {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#dropdownMenuOffset {
+    float: right;
+    display: inline;
+}
+
+.break-card-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.card {
+    width: 95%;
+}
