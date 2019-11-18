@@ -25,3 +25,25 @@
 .card {
     width: 95%;
 }
+
+
+.post-fa-icon {
+    font-size: 24px !important;
+}
+
+.pad-left {
+    /* padding-left: 15px; */
+}
+
+.my-pos-icon1 {
+    /* padding-left: 20px; */
+}
+.my-pos-icon2 {
+    padding-left: 20px;
+}
+
+.my-pos-icon3 {
+    float: right;
+    padding-right: 10px;
+
+}

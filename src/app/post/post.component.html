@@ -1,4 +1,4 @@
-<!-- <li class="list-group-item"> -->
+ 
     <div class="break-card-item"></div>
     <div class="card">
         <div class="">
@@ -8,6 +8,9 @@
             <span class=" ">
                 <span class="user-name">{{ post.user_details.user_name }}</span>
             </span>
+            <span class=" ">
+                ...
+            </span>
 
         </div>
         <img [src]="post.image_url" class="card-img-top" alt="nyege nyge pic">
@@ -16,11 +19,26 @@
         <p class="card-text">
                 {{ post.description }}
         </p>
+        <div class="container">
+            <div class="my-pos-icons">
+                <span class="my-pos-icon1">
+                    <i class="fa fa-heart post-fa-icon pad-left"></i> 
+                </span >
+                <span class="my-pos-icon2">
+                    <i class="fa fa-comment post-fa-icon pad-left"></i> 
+                </span>
+                <span class="my-pos-icon3">
+                    <i class="fa fa-share post-fa-icon pad-left"></i>  
+                </span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Add a comment..."></textarea>
+            </div>
+        </div>
         </div>
     </div>
     
-
-<!-- </li> -->
-  
-   
+ 
     

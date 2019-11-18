@@ -9,6 +9,9 @@ import { PostComponent } from './post/post.component';
 import { PostsComponent } from './posts/posts.component';
 import { SideNavigationComponent } from './side-navigation/side-navigation.component';
 import { RightAsideComponent } from './right-aside/right-aside.component';
+import { CreateEventComponent } from './create-event/create-event.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,12 @@ import { RightAsideComponent } from './right-aside/right-aside.component';
     PostComponent,
     PostsComponent,
     SideNavigationComponent,
-    RightAsideComponent
+    RightAsideComponent,
+    CreateEventComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

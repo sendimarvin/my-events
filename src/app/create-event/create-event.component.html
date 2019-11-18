@@ -1,0 +1,80 @@
+
+<div class="container">
+    <br>
+    <h3>Create event</h3>
+    <form>
+        <div class="form-group row">
+            <label for="event-name" class="col-sm-2 col-form-label">Event name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-name" placeholder="Enter event name...">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-promoter" class="col-sm-2 col-form-label">Event Promoter</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-promoter" placeholder="Enter event promoter...">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-startdate" class="col-sm-2 col-form-label">Start date</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control-plaintext" id="event-startdate" placeholder="Enter event start date...">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-starttime" class="col-sm-2 col-form-label">Strart time</label>
+            <div class="col-sm-10">
+                <input type="time" class="form-control-plaintext" id="event-starttime" placeholder="Enter event start time...">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-enddate" class="col-sm-2 col-form-label">End date</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control-plaintext" id="event-enddate" placeholder="Enter event end date...">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-endtime" class="col-sm-2 col-form-label">End time</label>
+            <div class="col-sm-10">
+                <input type="time" class="form-control-plaintext" id="event-endtime" placeholder="Enter event end time...">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-location" class="col-sm-2 col-form-label">Location</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-location" placeholder="Enter event location..">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-location" class="col-sm-2 col-form-label">No. of pax</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-location" placeholder="Enter No. of pax..">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-location" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10"> 
+                <textarea class="form-control" id="event-description" rows="2" placeholder="Enter No. of pax.."></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-posters" class="col-sm-2 col-form-label">Posters</label>
+            <div class="col-sm-10"> 
+                <input type="file" >
+            </div>
+        </div>
+
+        <div>
+            <span class="text-left">
+                <button type="button" class="btn btn-primary " (click)="createEvent()">Create</button>
+            </span>
+            <span class="text-left">
+                <button type="button" class="btn btn-default" [routerLink]="['/events']">Cancel</button>
+            </span>
+        </div>
+        
+    </form>
+</div>
+
+<br><br><br>
+<br><br><br>
