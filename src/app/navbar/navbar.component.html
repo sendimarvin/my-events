@@ -2,7 +2,7 @@
 
   <nav class="navbar navbar-expand navbar-dark navbar-staic bg-dark navbar-custom">
 
-	<div class="logo-content navbar-brand ">
+	<div class="logo-content navbar-brand " >
 		<img src="/assets/images/logo.jpg" alt="" class="logo-styes"> 
 		<a class="company-brand" [routerLink]="['/events']">turnApp</a>
 	</div>
@@ -20,16 +20,16 @@
 		<!-- <li class="nav-item">
 		  <a class="nav-link" href="#">Profile</a>
 		</li> -->
-		<li class="nav-item">
+		<li class="nav-item" *ngIf="customAuthService.loggedIn">
 		  <a class="nav-link" [routerLink]="['create-event']">Create</a>
 		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="#">Notifications
+		<li class="nav-item" *ngIf="customAuthService.loggedIn">
+		  <a class="nav-link" [routerLink]="['notifications']">Notifications
 				<span class="badge badge-light">4</span>
 		  </a>
 		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="#">Messages <span class="glyphicon glyphicon-envelope"></span> 
+		<li class="nav-item" *ngIf="customAuthService.loggedIn">
+		  <a class="nav-link" [routerLink]="['messages']">Messages <span class="glyphicon glyphicon-envelope"></span> 
 			<span class="badge badge-light">2</span>
 			</a>
 		</li>
@@ -41,24 +41,20 @@
 			More
 		</span>
 		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-			<a class="dropdown-item" href="#">Create event</a>
+			<a class="dropdown-item" [routerLink]="['create-event']" *ngIf="customAuthService.loggedIn">Create event</a>
+			<div class="dropdown-divider"  *ngIf="customAuthService.loggedIn"></div>
+			<a class="dropdown-item" [routerLink]="['user/profile']" *ngIf="customAuthService.loggedIn" >Profile</a>
 			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="#">Profile</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="#">Services</a>
-			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#" *ngIf="customAuthService.loggedIn">Services</a>
+			<div class="dropdown-divider" *ngIf="customAuthService.loggedIn"></div>
 			<a class="dropdown-item" href="#">About us</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="#">Logout</a>
+			<div class="dropdown-divider" *ngIf="customAuthService.loggedIn"></div>
+			<a class="dropdown-item" (click)="customAuthService.logoutUser()" *ngIf="customAuthService.logoutUser">Logout</a>
+			<div class="dropdown-divider" *ngIf="customAuthService.loggedIn"></div>
+			<a class="dropdown-item" [routerLink]="['login']" *ngIf="!customAuthService.loggedIn" >Login</a>
 		</div>
 		</div>
 
 	</div>
-
- 
-	
- 
-	
-
 
   </nav>

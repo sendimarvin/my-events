@@ -1,0 +1,43 @@
+
+<div class="container">
+    <br>
+    <h3>Update Profile</h3>
+    <br>
+    <br>
+    <br>
+    <form>
+        <div class="form-group row">
+            <label for="event-name" class="col-sm-2 col-form-label">Your Name / Brand</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-name" placeholder="Balaam">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-name" class="col-sm-2 col-form-label">E-mail Address</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-name" placeholder="example@gmail.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="event-promoter" class="col-sm-2 col-form-label">Phone Contact</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="event-promoter" placeholder="0779537749">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <span class="text-left">
+                <button type="button" class="btn btn-primary " (click)="updateProfile()">Update</button>
+            </span>
+            <span class="text-left">
+                <button type="button" class="btn btn-default" [routerLink]="['/events']">Cancel</button>
+            </span>
+        </div>
+        
+    </form>
+</div>
+
+<br><br><br>
+<br><br><br>

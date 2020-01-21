@@ -1,0 +1,68 @@
+
+
+<!-- <span *ngIf="!loggedIn">
+    <button (click)="signInWithGoogle()">Login with google</button>
+    <button (click)="signInWithFB()">Login with facebook</button>
+</span> -->
+
+<!-- <span *ngIf="loggedIn">
+    <button (click)="signOut()">Logout</button>
+</span> -->
+
+<!-- <br><br><br><br>
+<img src="{{ user?.photoUrl }}">
+<div>
+  <h4>Name: {{ user?.name }}</h4>
+  <p>Email: {{ user?.email }}</p>
+</div> -->
+
+
+
+
+<div class="break-card-item"></div>
+<div class="card" >
+    <div class="card-body">
+        <br><br>
+        <h5 class="card-title text-center">Login in to your turnApp account</h5>
+        <p class="card-text text-center social-buttons">
+            <em class="text-black">Quickly login with your social account</em>
+
+            <a class="btn btn-block btn-social btn-facebook text-center button-style" (click)="signInWithGoogle()">
+                <span class="fa fa-facebook"></span> Login with facebook
+            </a>
+            <a class="btn btn-block btn-social btn-google text-center button-style" (click)="signInWithFB()">
+                <span class="fa fa-google"></span> Login with google
+            </a>
+        </p>
+        <hr>
+
+        <div class="text-center">
+            <em >Or Login with your E-mail and password</em>
+        </div>
+        <br>
+        
+        <form class="">
+            <div class="form-group">
+              <label for="email-address" class="text-left">Email address</label>
+              <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check" class="text-center">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn theme-color" >LOGIN</button>
+            </div>
+        </form>
+        <div class="text-center ">
+            <a href="" class="text-black">Forgot password</a>
+            <span> | </span>
+            <a  class="text-black " href="signup"> Create a turnApp account</a>
+        </div>
+    </div>
+</div>

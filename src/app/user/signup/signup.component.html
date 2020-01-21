@@ -1,0 +1,74 @@
+
+
+<!-- <span *ngIf="!loggedIn">
+    <button (click)="signInWithGoogle()">Login with google</button>
+    <button (click)="signInWithFB()">Login with facebook</button>
+</span>
+
+<span *ngIf="loggedIn">
+    <button (click)="signOut()">Logout</button>
+</span> -->
+
+<!-- <br><br><br><br>
+<img src="{{ user?.photoUrl }}">
+<div>
+  <h4>Name: {{ user?.name }}</h4>
+  <p>Email: {{ user?.email }}</p>
+</div> -->
+
+
+<div class="break-card-item"></div>
+<div class="card" >
+    <div class="card-body">
+        <br><br>
+        <h5 class="card-title text-center">Welcome to turnApp! Create your free account and get started.</h5>
+        <p class="card-text text-center social-buttons">
+            <em class="text-black lighter-grey">Signup faster with your social account</em>
+
+            <a class="btn btn-block btn-social btn-facebook text-center button-style" (click)="signInWithGoogle()">
+                <span class="fa fa-facebook"></span> Signup with facebook
+            </a>
+            <a class="btn btn-block btn-social btn-google text-center button-style" (click)="signInWithFB()">
+                <span class="fa fa-google"></span> Signup with google
+            </a>
+        </p>
+        <hr>
+
+        <div class="text-center">
+            <em class="lighter-grey">Or Register with your E-mail</em>
+        </div>
+        <br>
+        
+        <form class="" novalidate autocomplete="off">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Your Name or label</label>
+              <input type="text" class="form-control" id="userName" name="userName" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="email-address" class="text-left">Email address</label>
+              <input type="email" class="form-control" id="emailAddress" name="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Your Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="passwordConfirm">Confirm Password</label>
+              <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Password">
+            </div>
+            <div class="form-check" class="text-center">
+              <input type="checkbox" class="form-check-input" id="agrreTerms" name="agrreTerms">
+              <label class="form-check-label" for="agrreTerms">I agree to the Privacy Policy and Service Terms.</label>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn theme-color"  (click)="signUpUser()" >Continue</button>
+            </div>
+        </form>
+        <div class="text-center ">
+            <a href="" class="text-black">Forgot password</a>
+            <span> | </span>
+            <a href="" class="text-black "  href="login">Already have a turnApp account?</a>
+        </div>
+    </div>
+</div>
