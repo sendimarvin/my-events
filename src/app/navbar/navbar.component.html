@@ -20,9 +20,9 @@
 		<!-- <li class="nav-item">
 		  <a class="nav-link" href="#">Profile</a>
 		</li> -->
-		<li class="nav-item" *ngIf="customAuthService.loggedIn">
+		<!-- <li class="nav-item" *ngIf="customAuthService.loggedIn">
 		  <a class="nav-link" [routerLink]="['create-event']">Create</a>
-		</li>
+		</li> -->
 		<li class="nav-item" *ngIf="customAuthService.loggedIn">
 		  <a class="nav-link" [routerLink]="['notifications']">Notifications
 				<span class="badge badge-light">4</span>
@@ -37,7 +37,8 @@
 	  </ul>
 
 	  <div class="dropdown">
-		<span class="btn btn-secondary dropdown-toggle options-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="btn btn-secondary dropdown-toggle options-btn" 
+			id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			More
 		</span>
 		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">

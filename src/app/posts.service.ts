@@ -15,6 +15,7 @@ export class PostsService {
 
 const SERVICES = [
   {
+    id: 1,
     name: 'Nyege Nyege',
     description: `
       Nyege Nyege is a Luganda word meaning 'the feeling of a sudden uncontrollable urge to move, shake or dance'. 
@@ -29,6 +30,7 @@ const SERVICES = [
     }
   },
   {
+    id: 2,
     name: 'Silent Disco',
     description: `
       Nyege Nyege is a Luganda word meaning 'the feeling of a sudden uncontrollable urge to move, shake or dance'. 
@@ -43,6 +45,7 @@ const SERVICES = [
     }
   },
   {
+    id: 3,
     name: 'Blankets and wine',
     description: `
       Nyege Nyege is a Luganda word meaning 'the feeling of a sudden uncontrollable urge to move, shake or dance'. 
@@ -57,6 +60,7 @@ const SERVICES = [
     }
   },
   {
+    id: 4,
     name: 'Burna buoy',
     description: `
       Nyege Nyege is a Luganda word meaning 'the feeling of a sudden uncontrollable urge to move, shake or dance'. 

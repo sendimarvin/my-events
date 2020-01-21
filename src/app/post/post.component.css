@@ -47,3 +47,36 @@
     padding-right: 10px;
 
 }
+
+.options {
+    float: right;
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post_comment {
+    border-radius: 10px;
+    vertical-align: bottom;
+    width: 70%;
+}
+
+.comment-btn {
+    color: blue;
+    border: 1px solid blue;
+}
+
+.comment-action {
+    width: 100%;
+}
+
+.comment-text {
+    width: 90%;
+    vertical-align: bottom;
+}
+
+.comment-btn {
+    width: 10%;
+    min-width: 59px;
+    margin-left: 8px;
+}
