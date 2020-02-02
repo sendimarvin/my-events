@@ -15,14 +15,18 @@ import { appRoutes } from './routes';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MessagesComponent } from './messages/messages.component';
 import { NotificationComponent } from './notification/notification.component';
+import { SimpleModelComponent } from './common/simple-model/simple-model.component'
 
 import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import {provideConfig } from './user/provide.provider';
 import { LoginComponent } from './user/login/login.component';
 import { SignupComponent } from './user/signup/signup.component'
 import { CustomAuthService } from './user/auth.service';
+
+import { JQ_TOKEN, ModalTriggerDirective } from './common/index';
  
 
+let jQuery = window['$'];
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +42,9 @@ import { CustomAuthService } from './user/auth.service';
     MessagesComponent,
     NotificationComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SimpleModelComponent,
+    ModalTriggerDirective
   ],
   imports: [
     BrowserModule,
@@ -47,6 +53,7 @@ import { CustomAuthService } from './user/auth.service';
   ],
   providers: [
     CustomAuthService,
+    {provide: JQ_TOKEN, useValue: jQuery},
     {
       provide: AuthServiceConfig,
       useFactory: provideConfig

@@ -22,7 +22,7 @@ const SERVICES = [
       The festival's name evokes different meanings among the East African countries. While in Uganda it refers 
       to the uncontrollable urge to dance, Nyege amongst Swahili speakers has sexual connotations
     `,
-    image_url: '/assets/images/nyege.jpg',
+    image_url: ['/assets/images/nyege.jpg'],
     posted_on: '2019-01-15',
     user_details: {
       user_name: 'Marvin',
@@ -37,7 +37,7 @@ const SERVICES = [
       The festival's name evokes different meanings among the East African countries. While in Uganda it refers 
       to the uncontrollable urge to dance, Nyege amongst Swahili speakers has sexual connotations
     `,
-    image_url: '/assets/images/silent-disco.jpg',
+    image_url: ['/assets/images/silent-disco.jpg'],
     posted_on: '2019-01-15',
     user_details: {
       user_name: 'Marvin',
@@ -52,7 +52,7 @@ const SERVICES = [
       The festival's name evokes different meanings among the East African countries. While in Uganda it refers 
       to the uncontrollable urge to dance, Nyege amongst Swahili speakers has sexual connotations
     `,
-    image_url: '/assets/images/blankets.jpg',
+    image_url: ['/assets/images/blankets.jpg', '/assets/images/blankets.jpg'],
     posted_on: '2019-01-15',
     user_details: {
       user_name: 'Marvin',
@@ -67,7 +67,7 @@ const SERVICES = [
       The festival's name evokes different meanings among the East African countries. While in Uganda it refers 
       to the uncontrollable urge to dance, Nyege amongst Swahili speakers has sexual connotations
     `,
-    image_url: '/assets/images/burna_boy.jpg',
+    image_url: ['/assets/images/burna_boy.jpg'],
     posted_on: '2019-01-15',
     user_details: {
       user_name: 'Marvin',
