@@ -6,7 +6,6 @@
 		<img src="/assets/images/logo.jpg" alt="" class="logo-styes"> 
 		<a class="company-brand" [routerLink]="['/events']">turnApp</a>
 	</div>
-	<br><br>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"> </span>
@@ -14,7 +13,8 @@
   
 	<div class="collapse navbar-collapse  text-center" id="navbarsExample02">
 	  <ul class="navbar-nav mr-auto  content-to-center">
-		<li class="nav-item active">
+
+		<li class="nav-item active home">
 		  <a class="nav-link" [routerLink]="['/events']">Home <span class="sr-only">(current)</span></a>
 		</li>
 		<!-- <li class="nav-item">
@@ -28,7 +28,7 @@
 				<span class="badge badge-light">4</span>
 		  </a>
 		</li>
-		<li class="nav-item" *ngIf="customAuthService.loggedIn">
+		<li class="nav-item messages" *ngIf="customAuthService.loggedIn">
 		  <a class="nav-link" [routerLink]="['messages']">Messages <span class="glyphicon glyphicon-envelope"></span> 
 			<span class="badge badge-light">2</span>
 			</a>

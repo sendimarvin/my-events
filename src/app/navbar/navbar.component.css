@@ -48,3 +48,24 @@
     border-right: 1px solid #d19b26;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .home {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo-content {
+        padding-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .messages {
+      display: none;
+    }
+
+}
+
